@@ -1,0 +1,111 @@
+@import 'https://fonts.google.com/specimen/Epilogue';
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  background: hsl(0deg, 0%, 8%);
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+  transition: all ease-in-out 0.3s;
+}
+
+nav {
+  display: flex;
+}
+nav .logo {
+  padding: 10px;
+  padding-top: 5px;
+}
+nav .navlinks {
+  position: fixed;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  width: 0;
+  right: 0;
+  background: #fff;
+  top: 0;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+}
+nav .navlinks.active {
+  width: 60vw;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+}
+nav .navlinks .close-menu {
+  margin-left: auto;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+nav .navlinks .navlink {
+  padding: 10px;
+  padding-left: 20px;
+}
+nav .navlinks .navlink span {
+  font-weight: 700;
+  color: hsl(0deg, 0%, 41%);
+}
+nav .navlinks .navlink .arrow-down {
+  line-height: 50px;
+  fill: hsl(0deg, 0%, 41%);
+  padding-left: 10px;
+  cursor: pointer;
+}
+nav .navlinks .navlink a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 41%);
+  font-weight: 700;
+}
+nav .navlinks .navlink .submenu-cont {
+  display: flex;
+  align-items: center;
+}
+nav .navlinks .login-cont {
+  align-items: center;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+}
+nav .navlinks .login-cont a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 41%);
+}
+nav .navlinks .login-cont button {
+  padding: 10px;
+  width: 100%;
+}
+nav .navlinks .login-cont .loginbtn {
+  outline: none;
+  background: transparent;
+  border: none;
+  color: hsl(0deg, 0%, 41%);
+}
+nav .navlinks .login-cont .registerbtn {
+  outline: none;
+  color: hsl(0deg, 0%, 41%);
+  border: 2px solid hsl(0deg, 0%, 8%);
+  border-radius: 10px;
+  background: transparent;
+}
+nav .menu-toggle {
+  padding: 10px;
+  margin-left: auto;
+  font-weight: 700;
+}
+nav .menu-toggle .icon-menu {
+  fill: hsl(0deg, 0%, 41%);
+  font-weight: 700;
+}
+
+* {
+  font-family: Epilogue, sans-serif;
+  font-weight: 500;
+}

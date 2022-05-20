@@ -1,7 +1,51 @@
-@import 'https://fonts.google.com/specimen/Epilogue';
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
 @import '_nav';
 @import '_variables';
 * {
 	font-family: Epilogue, sans-serif;
 	font-weight: 500;
+}
+section{
+	.image{
+		height: 80vw;
+		img{
+			position: absolute;
+			left: 0;
+			right: 0;
+			z-index: -1;
+		}
+	}
+	.paragraph{
+		text-align: center;
+		h2{
+			font-weight: 1000;
+			font-size: 36px;
+		}
+		p{
+			line-height: 27px;
+			font-size: 18px;
+			text-align: center;
+		}
+		.learn-more{
+			background: $almostBlack;
+			outline: none;
+			border: none;
+			color: $almostWhite;
+			border-radius: 15px;
+			padding: 25px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+	}
+	.logos{
+		display: flex;
+		width: 100%;
+		margin: auto;
+		margin-top: 30px;
+		align-items: center;
+		svg{
+			width: 100%;
+			padding: 10px;
+		}
+	}
 }
